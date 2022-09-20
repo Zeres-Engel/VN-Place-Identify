@@ -46,11 +46,7 @@ def get_img_from_url(param):
 
 
 def main():
-    # url = "https://thuthuatphanmem.vn/nhung-hinh-anh-dep-nhat-ve-da-lat-day-tho-mong-va-lang-man/"
-    # param = {"element": "div", "type":"id", "value": "post"}
-
-    # img_src = get_img_from_url(url, param)
-    # clone_img(img_src, "./dataset/Da-Lat")
+    
     parser = argparse.ArgumentParser(description="Clone Image From Website", formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("-u", "--url", type=str, help="Url website need to find", required=True)
     parser.add_argument("-e", "--element", type=str, help="Root element need to find", required=True)
