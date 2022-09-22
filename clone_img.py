@@ -46,17 +46,14 @@ def get_img_from_url(param):
 
 
 def main():
-    
     parser = argparse.ArgumentParser(description="Clone Image From Website", formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("-u", "--url", type=str, help="Url website need to find", required=True)
     parser.add_argument("-e", "--element", type=str, help="Root element need to find", required=True)
     parser.add_argument("-t", "--type", type=str, help="Attribute of element need to find. 'class' or 'id'", required=True)
     parser.add_argument("-v", "--value", type=str, help="Value of the attribute need to find", required=True)
     parser.add_argument("-p", "--path", type=str, help="Path to save image after download", required=True)
-
     args = parser.parse_args()
     get_img_from_url(args)
-
-
+    
 if __name__ == "__main__":
     main()
